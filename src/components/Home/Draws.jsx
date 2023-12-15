@@ -25,8 +25,8 @@ const Draws = () => {
   };
   return (
     <div className="grid grid-cols-3 gap-5 mb-10 mt-7 container mx-auto">
-      {draw.map((item) => (
-        <div className="card w-96 bg-base-100 shadow-xl" onClick={handleView}>
+      {draw.map((item, index) => (
+        <div key={index + 1} className="card w-96 bg-base-100 shadow-xl" onClick={handleView}>
           <figure>
             <img
               src="https://beebom.com/wp-content/uploads/2018/11/15-Best-Drawing-Programs-for-PC-and-Mac.jpg?w=750&quality=75"

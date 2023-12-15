@@ -151,7 +151,7 @@ export default function OverlayNavbar({ object }: any) {
       </Ul>
     </Div>
   );
-  const renderSaveButtons = (buttons: UserModeButton[]) => (
+  const renderSaveButtons = () => (
     <Div>
       <input
         type="text"
@@ -173,7 +173,7 @@ export default function OverlayNavbar({ object }: any) {
     <Nav>
       {renderUserModeButtons(userModeButtonsPrimary)}
       {renderUserModeButtons(userModeButtonsSecondary)}
-      {renderSaveButtons(userModeButtonsSecondary)}
+      {renderSaveButtons()}
     </Nav>
   );
 }
