@@ -1,9 +1,6 @@
 import React from 'react';
-
-import Draws from './Draws';
-
 import { useRouter } from 'next/router';
-
+import Draws from './Draws';
 const Home = () => {
   const router = useRouter();
   return (

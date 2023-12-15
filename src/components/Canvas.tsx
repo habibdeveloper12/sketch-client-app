@@ -1,39 +1,21 @@
-import axios from 'axios';
 import React, { useRef, type PointerEvent, type Touch, type TouchEvent } from 'react';
-
 import styled from 'styled-components';
-
 import { TRANSPARENT_BACKGROUND_IMAGE } from '~/config/constants';
-
 import { APP_FIXED_MAIN_UNIQUE_ID } from '~/config/globalElementIds';
-
 import { CANVAS_CONTROLS_OVERLAY } from '~/config/globalElementIds';
-
 import type { ActionModeOption } from '~/config/types';
-
 import useCanvasContext from '~/context/useCanvasContext';
-
 import useActionMode from '~/store/useActionMode';
-
 import useActiveObjectId from '~/store/useActiveObjectId';
-
 import useCanvasObjects from '~/store/useCanvasObjects';
-
 import useCanvasWorkingSize from '~/store/useCanvasWorkingSize';
-
 import useDefaultParams from '~/store/useDefaultParams';
-
 import useScrollPosition from '~/store/useScrollPosition';
-
 import useUserMode from '~/store/useUserMode';
-
 import useWindowSize from '~/store/useWindowSize';
-
 import useZoom from '~/store/useZoom';
-
 import theme from '~/theme';
 import generateUniqueId from '~/utils/generateUniqueId';
-
 import getControlPoints from '~/utils/getControlPoints';
 import getCursorFromModes from '~/utils/getCursorFromModes';
 import getDimensionsFromFreeDraw from '~/utils/getDimensionsFromFreeDraw';

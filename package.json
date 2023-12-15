@@ -1,10 +1,9 @@
 {
-  "name": "flatdraw",
-  "version": "1.0.7",
-  "author": "Diogo Capela",
-  "license": "MIT",
+  "name": "sketch",
+  "version": "1.0",
+  "author": "Habib",
+  "license": "",
   "scripts": {
-    "clean": "rm -rf dist && rm -rf out && rm -rf node_modules",
     "postinstall": "node -r esm scripts/postinstall.ts",
     "next:dev": "next dev",
     "next:build": "next build",
@@ -15,8 +14,7 @@
     "prettier:format": "prettier --write .",
     "check": "npm run eslint:lint && npm run prettier:format",
     "dev": "concurrently \"npm run next:dev\" \"npm run functions:dev\"",
-    "build": "npm run next:build && npm run next:export",
-    "preview": "npm run build && npm run functions:dev"
+    "build": "npm run next:build"
   },
   "dependencies": {
     "@mantine/core": "6.0.4",

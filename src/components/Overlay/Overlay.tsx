@@ -1,17 +1,10 @@
 import axios from 'axios';
-
 import React from 'react';
-
 import styled from 'styled-components';
 
-import OverlayMenu from '~/components/Overlay/OverlayMenu';
-
 import OverlayNavbar from '~/components/Overlay/OverlayNavbar';
-
 import OverlaySidebar from '~/components/Overlay/OverlaySidebar';
-
 import OverlayZoom from '~/components/Overlay/OverlayZoom';
-
 import theme from '~/theme';
 
 const FixedDiv = styled.div`
