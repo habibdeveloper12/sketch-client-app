@@ -49,16 +49,6 @@ const BottomRightDiv = styled.div`
 `;
 
 export default function Overlay({ object }: any) {
-  const saveCanvasState = async () => {
-    // const canvasState = getCanvasState();
-
-    try {
-      await axios.post('https://sketch-s4dw.onrender.com/api/v1/draw/draw', { object });
-      console.log('Canvas state saved successfully.');
-    } catch (error) {
-      console.error('Error saving canvas state:', error);
-    }
-  };
   return (
     <FixedDiv>
       <TopDiv>

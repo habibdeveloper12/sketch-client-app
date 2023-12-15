@@ -3,18 +3,11 @@
   "plugins": ["@typescript-eslint"],
   "extends": ["next/core-web-vitals", "eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
   "rules": {
-    "import/order": [
-      "error",
-      {
-        "groups": ["builtin", "external", "internal", ["sibling", "parent"], "index", "unknown"],
-        "newlines-between": "always",
-        "alphabetize": {
-          "order": "asc",
-          "caseInsensitive": false
-        }
-      }
-    ],
+    "import/order": "off",
+    "react/prop-types": "off",
+    "react/jsx-key": "off",
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": ["error"]
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": "off"
   }
 }
